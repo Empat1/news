@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Добавление новости{% endblock %}
+
+{% block body %}
+    <div class="container mt-5">
+            {{ form_start(form) }}
+            <div class="form-group">
+                {{ form_row(form.name) }}
+                {{ form_row(form.annotation) }}
+                {{ form_row(form.text) }}
+                {{ form_row(form.submit) }}
+            </div>
+            {{ form_end(form) }}
+    </div>
+
+{% endblock %}
